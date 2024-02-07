@@ -17,7 +17,7 @@ a{
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1.3rem;
-    color:black;
+    color:white;
 }
 #hero{
     height:100vh;
@@ -61,8 +61,7 @@ i{
     justify-content: space-evenly;
 }
 #service h1{
-
-    text-align: center;
+     text-align: center;
 }
 #service .card{
     color:azure;
@@ -87,12 +86,13 @@ i{
     
     
     nav div{
-        display: none;
+        /* display: none; */
     }
 
-    /* i{ */
-        /* display:flex !important; */
-    /* } */
+    i{ 
+        display:flex !important; 
+     } 
+
 
     #hero{
         height: 100%;
@@ -124,6 +124,8 @@ i{
     #service .upper{
         width: 100%;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     #service .card img{
         width:50%;
