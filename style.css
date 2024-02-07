@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right:0;
+}
+a{
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color:black;
+}
+#hero{
+    height:100vh;
+    position:relative;
+    }
+video{
+    width:100%;
+}
+#hero h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about{
+    height: 100vh;
+    display: flex;
+    margin:10rem 0;
+}
+
+#about .left,.right{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#about .left img{
+    width:50%;
+}
+
+i{
+    display:none !important;
+}
+#service .upper{
+    display:flex;
+    justify-content: space-evenly;
+}
+#service h1{
+
+    text-align: center;
+}
+#service .card{
+    color:azure;
+    background-color: blueviolet;
+    width:50%;
+    border-radius:0.8rem;
+    margin:1rem;
+    padding: 1rem;
+}
+.card img{
+    width:20rem;
+}
+#contact .lower input{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+
+/* mobile screen */
+@media screen and (max-width:426px) {
+    
+    
+    nav div{
+        display: none;
+    }
+
+    /* i{ */
+        /* display:flex !important; */
+    /* } */
+
+    #hero{
+        height: 100%;
+    }
+    #hero h1{
+        font-size: 1rem;
+        font-weight:600;
+        padding: 1 rem;
+        background-color: rgba(0, 0, 0, 0.455);
+        color:white;
+    }
+
+    #about{
+        height: 100%;
+        margin: 2rem 0;
+        flex-direction: column;
+    }
+    #about .left,.right{
+        width:100%;
+    }
+    #about .right p{
+        padding: 1rem;
+    }
+    #service{
+        display:flex;
+        height: 100%;
+        margin:2rem 0;
+    }
+    #service .upper{
+        width: 100%;
+        flex-direction: column;
+    }
+    #service .card img{
+        width:50%;
+    }
+    #contact {
+        border-style: dotted;
+        border-radius: 0.8rem;
+    }
+
+    
+
+
+
+}
